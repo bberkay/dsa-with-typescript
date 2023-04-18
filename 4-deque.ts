@@ -11,12 +11,13 @@ class Deque{
 
     public addRear(a:number): void
     {
+        // add element to rear
         this.deque.push(a);
     }
 
     public addFront(a:number): void
     {
-        // [10, 7, 8, 5, 11]
+        // add element to front
         let cache_even = this.deque[0];
         let cache_odd = this.deque[0];
         this.deque[0] = a;
@@ -41,6 +42,7 @@ class Deque{
 
     public removeFront(): number
     {
+        // delete front element
         const temp = this.deque[0];
         this.deque.splice(0, 1);
         return temp;
@@ -48,6 +50,7 @@ class Deque{
 
     public removeRear(): number
     {
+        // delete rear element
         const temp = this.deque[this.deque.length - 1];
         this.deque.splice(this.deque.indexOf(this.deque.length - 1), 1);
         return temp;
@@ -56,14 +59,17 @@ class Deque{
 }
 
 let deque = new Deque()
-deque.addRear(8);
-deque.addRear(5);
-deque.addFront(7);
-deque.addFront(10);
-deque.addRear(11);
-console.log(deque);
-deque.removeRear();
-deque.removeFront();
-deque.addFront(55);
-deque.addRear(45);
-console.log(deque);
+deque.addRear(8); // [8]
+deque.addRear(5); // [8, 5]
+deque.addFront(7); // [7, 8, 5]
+deque.addFront(10); // [10, 7, 8, 5]
+deque.addRear(11); // [10, 7, 8, 5, 11]
+
+console.log(deque); // [10, 7, 8, 5, 11]
+
+deque.removeRear(); // 11
+deque.removeFront(); // 10
+deque.addFront(55); // [55, 7, 8, 5]
+deque.addRear(45); // [55, 7, 8, 5, 45]
+
+console.log(deque); // [55, 7, 8, 5, 45]
