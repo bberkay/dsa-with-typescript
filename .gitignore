@@ -130,3 +130,5 @@ dist
 /app.ts
 /app.js
 /.vscode
+/.package-lock.json
+/.package.json
