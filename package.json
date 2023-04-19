@@ -1,8 +1,0 @@
-{
-    "scripts":{
-        "start":"tsc app.ts && node app.js"
-    },
-    "dependencies": {
-        "typescript": "^4.9.5"
-    }
-}
