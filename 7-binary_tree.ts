@@ -43,20 +43,22 @@ function postorder(node:TNode) {
     }
 }
 
-let node = new TNode(5);
-let node2 = new TNode(10);
-let node3 = new TNode(15);
-let node4 = new TNode(20);
-let node5 = new TNode(25);
-node.right = node3;
-node.left = node2;
-node.left.left = node4;
-node.left.right = node5;
+let t_node = new TNode(5);
+let t_node2 = new TNode(10);
+let t_node3 = new TNode(15);
+let t_node4 = new TNode(20);
+let t_node5 = new TNode(25);
+
+t_node.right = t_node3; // t_node.value = 5 t_node.right = 15
+t_node.left = t_node2; // t_node.value = 5 t_node.left = 10
+t_node.left.left = t_node4; // t_node.value = 5 t_node.left = 10 t_node.left.left = 20
+t_node.left.right = t_node5; // t_node.value = 5 t_node.left = 10 t_node.left.right = 25
+
 console.log("in order");
-inorder(node);
+inorder(t_node); // 20 10 25 5 15
 console.log("pre order");
-preorder(node);
+preorder(t_node); // 5 10 20 25 15
 console.log("post order");
-postorder(node);
+postorder(t_node); // 20 25 10 15 5
 
 

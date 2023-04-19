@@ -37,13 +37,13 @@ class CDNode{
 
 }
 
-let node = new CDNode(5);
-let node2 = new CDNode(10);
-let node3 = new CDNode(15);
-node.setNext(node2);
-node2.setNext(node3);
-node2.setPrev(node);
+let d_node = new CDNode(5);
+let d_node2 = new CDNode(10);
+let d_node3 = new CDNode(15);
+d_node.setNext(d_node2); // node.value = 5 node.next = 10
+d_node2.setNext(d_node3); // node2.value = 10 node2.next = 15
+d_node2.setPrev(d_node); // node2.prev = 5
 
-console.log(node.getNext().getPrev().getValue());
+console.log(d_node.getNext().getPrev().getValue()); // 5
 
 

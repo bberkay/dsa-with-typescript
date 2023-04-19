@@ -24,12 +24,16 @@ class BSTNode{
 
 function addToBST(bst:BSTNode, node:BSTNode){
     if(node.value! > bst.value!){
+        // if node value is greater than bst value
+        // then it should be added to the right of bst
         if(!bst.right)
             bst.right = node
         else
             addToBST(bst.right, node);
     }
     else if(node.value! < bst.value!){
+        // if node value is less than bst value
+        // then it should be added to the left of bst
         if(!bst.left)
             bst.left = node
         else
@@ -39,12 +43,16 @@ function addToBST(bst:BSTNode, node:BSTNode){
 
 function searchOnBST(bst:BSTNode, search:number): boolean
 {
+    // if bst is null or search is not found
     if(!bst)
         return false;
+    // if search is found
     if(bst.value == search)
         return true;
+    // if search is not found then search on right subtree
     if(searchOnBST(bst.right, search))
         return true
+    // if search is not found then search on left subtree
     if(searchOnBST(bst.left, search))
         return true
     return false;
@@ -52,6 +60,7 @@ function searchOnBST(bst:BSTNode, search:number): boolean
 
 function traverseInOrder(bst:BSTNode)
 {
+    // left -> root -> right
     if(bst){
         traverseInOrder(bst.left);
         console.log(bst.value);
@@ -61,6 +70,7 @@ function traverseInOrder(bst:BSTNode)
 
 function minOfBST(bst:BSTNode): BSTNode
 {
+    // get the left most node
     if(!bst.left)
         return bst;
     return minOfBST(bst.left);
@@ -68,6 +78,7 @@ function minOfBST(bst:BSTNode): BSTNode
 
 function maxOfBST(bst:BSTNode): BSTNode
 {
+    // get the right most node
     if(!bst.right)
         return bst;
     return maxOfBST(bst.right);
@@ -79,24 +90,29 @@ function deleteFromBST(bst:BSTNode, data:number): BSTNode|undefined|null
         return null;
 
     if(bst.value == data){
+        // if node to be deleted is a leaf node
         if(!(bst.right && bst.left)){
             bst.value = null;
             return bst   
         }
         else if(!bst.right && bst.left){
+            // if node to be deleted has only left child
+            // then replace it with the maximum value of left subtree
             let temp = maxOfBST(bst.left).value;
             bst.value = temp;
             deleteFromBST(bst.left, temp!);
         }else{
+            // if node to be deleted has only right child
+            // then replace it with the minimum value of right subtree
             let temp = minOfBST(bst.right).value;
             bst.value = temp;
             deleteFromBST(bst.right, temp!);
         }
         return bst;
     }
-    else if(data > bst.value!)  
+    else if(data > bst.value!) // if data is greater than bst value then search on right subtree
         bst.right = deleteFromBST(bst.right, data)!;
-    else if(data < bst.value!)
+    else if(data < bst.value!) // if data is less than bst value then search on left subtree
         bst.left = deleteFromBST(bst.left, data)!;
 
     return bst;
@@ -113,18 +129,18 @@ let node8 = new BSTNode(14);
 
 console.log("\n\n========================================");
 
-addToBST(root, node2);
+addToBST(root, node2); 
 addToBST(root, node3);
 addToBST(root, node4);
 addToBST(root, node5);
 addToBST(root, node6);
 addToBST(root, node7);
 addToBST(root, node8);
-//traverseInOrder(root);
-//console.log(searchOnBST(root, 14));
-//console.log(minOfBST(root).value);
-//console.log(maxOfBST(root).value);
-root = deleteFromBST(root, 3)!;
-traverseInOrder(root);
+traverseInOrder(root); // 1 3 4 6 7 8 10 14
+console.log(searchOnBST(root, 14)); // true
+console.log(minOfBST(root).value); // 1
+console.log(maxOfBST(root).value); // 14
+root = deleteFromBST(root, 3)!; // 3 is removed and replaced with left subtree's max value i.e. 4
+traverseInOrder(root); // 1 4 6 7 8 10 14
 
 console.log("========================================\n\n");
