@@ -1,8 +1,10 @@
 /*
 Selection Sort
-Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
+Selection sort is a simple sorting algorithm used to sort a list or array of elements. The algorithm works by finding the smallest element in the unsorted portion of the list and moving it to the beginning of the list, then repeating the process for the remaining unsorted elements until the entire list is sorted.
+
 
 Time Complexity - Best, Worst, Average: O(n^2)
+Space Complexity: O(1)
 */
 
 function selectionSort(data:Array<number>) : Array<number>
