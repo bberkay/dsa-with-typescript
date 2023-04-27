@@ -1,10 +1,14 @@
 /*
-Deque
-Deque or Double Ended Queue is a type of queue in which insertion and removal of elements can either be performed from the front or the rear. Thus, it does not
-follow FIFO rule(First In First Out).
+    Deque
 
-Applications
-In undo operations on software, To store history in browsers, For implementing both stacks and queues.
+    A deque is a double-ended queue. It can be used to add or remove elements from both ends.
+
+    In Real Life
+        1. Undo Operation: A deque can be used to implement an undo operation. Each element in the deque represents a state and contains a reference to the previous state.
+        2. Browser History: A deque can be used to implement the back and forward buttons in a browser. Each element in the deque represents a URL and contains a reference to the previous URL and the next URL.
+        3. Breadth-First Search: A deque can be used to perform a breadth-first search on a graph or tree. In this case, each element in the deque represents a vertex or node and contains references to its adjacent vertices or child nodes.
+
+    Description and comments created by chatgpt and github copilot
 */
 class Deque{
     private deque:number[] = [];
@@ -23,15 +27,15 @@ class Deque{
         this.deque[0] = a;
         let l = this.deque.length + 1;
         for(let i = 1;i<l;i++){
-            if(i % 2 == 0){
+            if(i % 2 == 0){ // even
                 cache_even = this.deque[i];
-                if(i + 1 >= l)
+                if(i + 1 >= l) // if last element
                     this.deque.push(cache_odd);
                 else
                     this.deque[i] = cache_odd;
-            }else{
+            }else{ // odd
                 cache_odd = this.deque[i];
-                if(i + 1 >= l)
+                if(i + 1 >= l) // if last element
                     this.deque.push(cache_even);
                 else
                     this.deque[i] = cache_even;
@@ -52,7 +56,7 @@ class Deque{
     {
         // delete rear element
         const temp = this.deque[this.deque.length - 1];
-        this.deque.splice(this.deque.indexOf(this.deque.length - 1), 1);
+        this.deque.splice(this.deque.indexOf(this.deque.length - 1), 1); // this.deque.length - 1
         return temp;
     }
 

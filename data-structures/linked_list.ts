@@ -1,9 +1,14 @@
 /*
-Linked List
-A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.
+    Linked List
 
-Applications
-In undo fuctionality of softwares, Hash tables, Graphs, Dynamic memory allocation
+    A linked list is a data structure that consists of a sequence of elements, each of which contains a reference (or pointer) to the next element in the sequence. Unlike arrays, which have a fixed size, linked lists can grow or shrink dynamically as elements are added or removed.
+
+    In Real Life
+        1. Music or Video Playlist: A music or video playlist can be implemented using a linked list, where each element represents a song or video and contains a reference to the next element in the playlist.
+        2. Address Book: An address book application may use a linked list to store contacts. Each element in the list represents a contact and contains a reference to the next contact in the list.
+        3. File System: A file system may use a linked list to represent the blocks of a file. Each element in the list represents a block of the file and contains a reference to the next block.
+
+    Description and comments created by chatgpt and github copilot
 */
 
 class CNode{

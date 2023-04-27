@@ -1,16 +1,14 @@
 /*
-Binary Search Tree
-Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.
--It is called a binary tree because each tree node has a maximum of two children.
--It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.
+    Binary Search Tree
 
-The properties that separate a binary search tree from a regular binary tree is
--All nodes of left subtree are less than the root node
--All nodes of right subtree are more than the root node
--Both subtrees of each node are also BSTs i.e. they have the above two properties
+    A binary search tree is a binary tree in which every node fits a specific ordering property: all left descendents <= n < all right descendents. This must be true for each node n.
 
-Applications
-- In multilevel indexing in the database, for dynamic sorting, For managing virtual memory areas in Unix kernel
+    In Real Life
+        1. Phone Book: We can use a BST to store phone numbers, names, and addresses of people. This allows us to search, insert, and delete in O(log n) time.
+        2. Dictionary: We can use a BST to store definitions of words. This allows us to search, insert, and delete in O(log n) time.
+        3. File System: We can use a BST to store file names. This allows us to search, insert, and delete in O(log n) time.
+
+    Description and comments created by chatgpt and github copilot
 */
 class BSTNode{
     public left:BSTNode;

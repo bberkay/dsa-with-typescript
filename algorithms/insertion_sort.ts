@@ -1,7 +1,16 @@
 /*
-Insertion Sort
+    Insertion Sort
 
-Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
+    Insertion sort is a simple sorting algorithm that works by taking one element at a time from an unsorted list and inserting it into its correct position in a sorted sublist. The algorithm starts by considering the first element of the list as the sorted sublist, then it takes the next element and inserts it into the correct position in the sorted sublist, and repeats this process until all elements have been inserted into the sorted sublist.
+
+    For example, let's consider an unsorted list [5, 2, 4, 6, 1, 3]. The insertion sort algorithm would start by considering the first element, which is already in the sorted sublist. Then, it would take the second element (2) and compare it with the first element (5). Since 2 is smaller than 5, it would be inserted before 5, resulting in [2, 5, 4, 6, 1, 3]. Then, it would take the third element (4) and insert it into the correct position in the sorted sublist, resulting in [2, 4, 5, 6, 1, 3]. This process would continue until all elements have been inserted into the sorted sublist.
+
+    Time Complexity - Best: O(n^2)
+    Time Complexity - Average: O(n^2)
+    Time Complexity - Worst: O(n^2)
+    Space Complexity: O(1)
+
+    Description and comments created by chatgpt and github copilot
 */
 
 function insertionSort(data:Array<number>): Array<number>

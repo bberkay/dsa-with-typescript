@@ -1,9 +1,15 @@
 /*
-Circular Queue
-A circular queue is the extended version of regular queue where the last element is connected to the first element. Thus forming a circle-like structure.
+    Circular Queue
 
-Applications
-CPU Scheduling, Traffic Management
+    A circular queue is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
+
+    In Real Life
+        1. CPU Scheduling: Operating systems often maintain a queue of processes that are ready to execute or that are waiting for a particular event to occur.
+        2. Circular Buffer: A circular buffer is a popular implementation of a queue that is used in computer science. It is a fixed-size buffer that is often used as a queue to store data that is waiting to be processed.
+        3. Printer Queue: A printer queue is another example of a queue that is used in computer science. When multiple print jobs are sent to a printer, the jobs are placed in a queue to be processed in the order that they were received.
+
+    Description and comments created by chatgpt and github copilot
+
 */
 
 class CircularQueue{

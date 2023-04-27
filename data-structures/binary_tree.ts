@@ -1,12 +1,14 @@
 /*
-Binary Tree
-A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:
-- data item
-- address of left child
-- address of right child
+    Binary Tree
 
-Applications
-For easy and quick access to data, in router algorithims
+    A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+
+    In Real Life
+        1. File System: We can represent a file system as a tree. The folders represent the nodes and the files are the leaves.
+        2. Organization Structure: We can represent the structure of an organization as a tree. The CEO is the root. The managers are the internal nodes and the employees are the leaves.
+        3. Computer Memory: We can represent the computer's memory as a tree. The root represents the memory used by the operating system. The internal nodes represent the memory used by the kernel and the leaves represent the memory used by the processes.
+        
+    Description and comments created by chatgpt and github copilot
 */
 
 class TNode {
