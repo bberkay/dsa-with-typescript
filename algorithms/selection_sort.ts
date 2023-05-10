@@ -5,9 +5,11 @@
 
     For example, let's take an array [64, 25, 12, 22, 11]. The selection sort algorithm would start by finding the smallest element (which is 11) and swapping it with the first element (64), resulting in [11, 25, 12, 22, 64]. Then, it would find the smallest element in the remaining unsorted portion of the list (which is 12) and swap it with the second element (25), resulting in [11, 12, 25, 22, 64]. This process would continue until the entire array is sorted in ascending order.
 
-    Time Complexity - Best: O(n^2)
-    Time Complexity - Average: O(n^2)
-    Time Complexity - Worst: O(n^2)
+    Time Complexity
+        1. Best: O(n^2)
+        2. Average: O(n^2)
+        3. Worst: O(n^2)
+        
     Space Complexity: O(1)
 
     Description and comments created by chatgpt and github copilot
