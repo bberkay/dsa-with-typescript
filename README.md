@@ -1,5 +1,7 @@
 # Data Structures and Algorithms with TypeScript
 
+The main goal is to practice on both.
+
 ## Data Structures
 1. [Stack](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/stack.ts)
 2. [Queue](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/queue.ts)
@@ -27,7 +29,5 @@
 5. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)
 6. [Heap Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/heap_sort.ts)
 
-
-Main Goal: Practice on both 
 
 
