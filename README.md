@@ -23,9 +23,9 @@
 1. [Bubble Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/bubble_sort.ts)
 2. [Selection Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/selection_sort.ts)
 3. [Insertion Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/insertion_sort.ts)
-4. [Merge Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/merge_sort.ts)https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/merge_sort.ts
-5. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts
-6. [Heap Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/heap_sort.ts)https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/heap_sort.ts
+4. [Merge Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/merge_sort.ts)
+5. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)
+6. [Heap Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/heap_sort.ts)
 
 
 Main Goal: Practice on both 
