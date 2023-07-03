@@ -1,6 +1,6 @@
 # Data Structures and Algorithms with TypeScript
 
-The main goal is to practice on both.
+The main purpose is to practice.
 
 ## Data Structures
 1. [Stack](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/stack.ts)
