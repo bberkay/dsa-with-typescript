@@ -10,6 +10,7 @@
 
     Description and comments created by chatgpt and github copilot
 */
+
 class Deque{
     private deque:number[] = [];
 
