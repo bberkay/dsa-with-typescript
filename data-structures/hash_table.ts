@@ -38,10 +38,13 @@ class HashTable{
         else{
             let cycleCount = 0;
             let nextEmptyIndex: number = hashedKey;
-            while(this.currentHashTable[nextEmptyIndex] != -1 && ((cycleCount == 1 && nextEmptyIndex < hashedKey) || cycleCount == 0)){
+            while(this.currentHashTable[nextEmptyIndex] != -1){
                 nextEmptyIndex++;
                 
-                if(nextEmptyIndex > this.currentHashTable.length && cycleCount == 0){
+                if(nextEmptyIndex > this.currentHashTable.length){
+                    if(cycleCount > 0){
+                        throw new Error("hash table is full");
+                    }
                     cycleCount = 1;
                     nextEmptyIndex = 0;
                 }
