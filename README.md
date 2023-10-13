@@ -10,6 +10,7 @@ The main purpose is to practice.
 5. [Linked List](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/linked_list.ts)
 6. [Double Linked List](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/double_linked_list.ts)
 7. [Hash Table](https://github.com/bberkay/dsa-with-typescript/blob/main/data-structures/hash_table.ts)
+8. Heap(coming soon)
 
 ## Trees
 1. [Binary Tree](https://github.com/bberkay/dsa-with-typescript/blob/main/trees/binary_tree.ts)
@@ -27,6 +28,7 @@ The main purpose is to practice.
 3. [Insertion Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/insertion_sort.ts)
 4. [Merge Sort(coming soon)](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/merge_sort.ts)
 5. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)
+6. Heap Sort(coming soon)
 
 ## Graphs
 ...
