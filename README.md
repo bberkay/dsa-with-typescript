@@ -28,7 +28,6 @@ The main purpose is to practice.
 3. [Insertion Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/insertion_sort.ts)
 4. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)
 5. Merge Sort
-6. Heap Sort
 
 ## Graphs
 ...
