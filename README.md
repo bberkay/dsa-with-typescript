@@ -29,8 +29,9 @@ The main purpose is to practice.
 4. [Counting Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/counting_sort.ts)
 5. [Merge Sort](https://github.com/bberkay/dsa-with-typescript/blob/main/sort-algorithms/merge_sort.ts)
 
-## Graphs
-...
+## Graph Based
+1. [Adjacency Matrix](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/adjacency_matrix.ts)
+2. Adjacency List
 
 ## Greedy Algorithms
 ...
