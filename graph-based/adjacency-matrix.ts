@@ -11,7 +11,7 @@
     Description and comments created by chatgpt and github copilot
  */
 
-class Matrix{
+class AdjacencyMatrix{
     private matrix: number[][] = [];
 
     public constructor(size: number) {
@@ -35,20 +35,20 @@ class Matrix{
         this.matrix[to][from] = 0;
     }
 
-    public getMatrix(): number[][]
+    public print(): void
     {
-        return this.matrix;
+        console.log(this.matrix);
     }
 }
 
-var myMatrix = new Matrix(5);
+var myMatrix = new AdjacencyMatrix(5);
 
 myMatrix.addEdge(0, 1);
 myMatrix.addEdge(0, 2);
 myMatrix.addEdge(1, 2);
 myMatrix.addEdge(2, 0);
 myMatrix.addEdge(2, 3);
-console.log(myMatrix.getMatrix());
+myMatrix.print();
 // [
 //   [0, 1, 1, 0, 0],
 //   [1, 0, 1, 0, 0],
@@ -58,7 +58,7 @@ console.log(myMatrix.getMatrix());
 // ]
 
 myMatrix.removeEdge(0, 1);
-console.log(myMatrix.getMatrix());
+myMatrix.print();
 // [
 //   [0, 0, 1, 0, 0],
 //   [0, 0, 1, 0, 0],
