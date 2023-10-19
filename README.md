@@ -32,6 +32,7 @@ The main purpose is to practice.
 ## Graph Based
 1. [Adjacency Matrix](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/adjacency_matrix.ts)
 2. [Adjacency List](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/adjacency_list.ts)
+3. [Depth First Search](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/dfs.ts)
 
 ## Greedy Algorithms
 ...
