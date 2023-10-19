@@ -133,3 +133,4 @@ dist
 /package-lock.json
 /package.json
 /.idea
+/tsconfig.json
