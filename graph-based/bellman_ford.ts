@@ -10,17 +10,33 @@
     Description and comments created by chatgpt and github copilot
  */
 
-type GraphForBF = {
-    vertices: string[],
-    edges: {u: string, v: string, w: number}[]
-}
-
-function bellmanFord(graph: GraphForBF, source: string): void
+function bellmanFord(graph:  {vertices: string[], edges: {u: string, v: string, w: number}[]}, source: string): number[]
 {
-    
+    // Initialization
+    const sIndex = graph.vertices.indexOf(source);
+    let distances: any[]  = new Array(graph.vertices.length).fill(Infinity);
+    distances[sIndex] = 0;
+
+    // Relaxation
+    for(const edge of graph.edges){
+        const uIndex = graph.vertices.indexOf(edge.u);
+        const vIndex = graph.vertices.indexOf(edge.v);
+        const currentDistance = distances[uIndex] + edge.w;
+        distances[vIndex] = distances[vIndex] > currentDistance ? currentDistance : distances[vIndex];
+    }
+
+    // Negative weight cycle detection
+    for(const edge of graph.edges){
+        if(distances[graph.vertices.indexOf(edge.v)] > distances[graph.vertices.indexOf(edge.u)] + edge.w && distances[graph.vertices.indexOf(edge.v)] !== Infinity){
+            console.log("Negative weight cycle detected. Bellman-Ford cannot be applied.");
+            return [];
+        }
+    }
+
+    return distances;
 }
 
-const graph: GraphForBF = {
+const graph = {
     vertices: ["A", "B", "C", "D", "E"],
     edges: [
         { u: "A", v: "B", w: 4 },
@@ -31,4 +47,4 @@ const graph: GraphForBF = {
     ],
 }
 
-bellmanFord(graph, "A");
+console.log(bellmanFord(graph, "A")); // [0, 4, 2, 6, 7]
