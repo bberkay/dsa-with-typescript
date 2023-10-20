@@ -9,3 +9,26 @@
 
     Description and comments created by chatgpt and github copilot
  */
+
+type GraphForBF = {
+    vertices: string[],
+    edges: {u: string, v: string, w: number}[]
+}
+
+function bellmanFord(graph: GraphForBF, source: string): void
+{
+    
+}
+
+const graph: GraphForBF = {
+    vertices: ["A", "B", "C", "D", "E"],
+    edges: [
+        { u: "A", v: "B", w: 4 },
+        { u: "A", v: "C", w: 2 },
+        { u: "B", v: "C", w: 3 },
+        { u: "B", v: "D", w: 2 },
+        { u: "B", v: "E", w: 3 },
+    ],
+}
+
+bellmanFord(graph, "A");
