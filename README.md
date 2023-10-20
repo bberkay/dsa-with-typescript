@@ -34,6 +34,7 @@ The main purpose is to practice.
 2. [Adjacency List](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/adjacency_list.ts)
 3. [Depth First Search](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/dfs.ts)
 4. [Breadth First Search](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/bfs.ts)
+5. [Bellman Ford's Algorithm](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/bellman_ford.ts)
 
 ## Greedy Algorithms
 ...
