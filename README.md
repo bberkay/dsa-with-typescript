@@ -37,7 +37,7 @@ The main purpose is to practice.
 5. [Bellman Ford's Algorithm](https://github.com/bberkay/dsa-with-typescript/blob/main/graph-based/bellman_ford.ts)
 
 ## Greedy Algorithms
-...
+1. [Dijkstra Algorithm](https://github.com/bberkay/dsa-with-typescript/blob/main/greedy-algorithms/dijkstra.ts)
 
 ## Dynamic Programming
 ...
